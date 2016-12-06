@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '4.2.1'
-gem 'mysql2'
+gem 'mysql2', '~> 0.3.18'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'mailgun-ruby', require: 'mailgun'
@@ -17,5 +17,9 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'pry-rails'
+end
+
+group :test do
+  gem 'sqlite3'
 end
 
