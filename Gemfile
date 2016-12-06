@@ -17,9 +17,11 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'pry-rails'
+  gem 'rspec-rails'
 end
 
 group :test do
   gem 'sqlite3'
+  gem 'capybara', '~> 2.4'  
 end
 
